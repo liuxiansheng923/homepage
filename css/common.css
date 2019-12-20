@@ -1,0 +1,320 @@
+/* 公共样式 */
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+@font-face {
+		     font-family: 'icomoon';
+		     src:  url('../fonts/icomoon.eot?7kkyc2');
+		     src:  url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+		       url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+		       url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+		       url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+		     font-weight: normal;
+		     font-style: normal;
+}
+
+.w {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.style-red {
+	color: #c81623;
+}
+/* 顶部导航制作开始 */
+.spacer {
+	width: 1px;
+	height: 12px;
+	background-color: #666;
+	margin: 9px 12px 0;
+}
+
+.shortcut {
+	height: 31px;
+	line-height: 31px;
+	background-color: #f1f1f1;
+}
+
+.shortcut li {
+	float: left;
+}
+
+.fr .icomoon {
+	font-family: 'icomoon';
+	font-size: 16px;
+	line-height: 27px;
+}
+/* header 制作开始 */
+.header {
+	position: relative;
+	height: 105px; 
+}
+
+.logo {
+	position: absolute;
+	top: 24px;
+	left: 0;
+	width: 178px;
+	height: 59px;
+}
+
+.logo a {
+	display: block;
+	width: 178px;		/* 使用width、height为100%时，注意它的父级是否也继承了100% */
+	height: 59px;
+	background: url(../img/logo.png) no-repeat;		/* 注意路径 */
+	text-indent: -999px;	/* 利用首行缩进来隐藏标签文本 */
+	overflow: hidden;
+}
+
+.search {
+	position: absolute;
+	top: 24px;
+	left: 248px;
+}
+
+.text {
+	float: left;
+	width: 445px;
+	height: 32px;
+	border: 2px solid #b1191a;
+	color: #ccc;
+	padding-left: 10px;
+}
+
+.btn {
+	float: left;
+	width: 82px;
+	height: 36px;
+	background: #b1191a;
+	border: none;
+	font-size: 16px;
+	color: white;
+}
+
+.hotwords {
+	position: absolute;
+	top: 65px;
+	left: 248px;
+	width: 545px;
+}
+
+.hotwords ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+.shopcar {
+	position: absolute;
+	top: 24px;
+	right: 64px;
+	width: 138px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	border: 1px solid #dfdfdf;
+	background-color: #f7f7f7;
+}
+
+.car,
+.arrow {
+	font-family: 'icomoon';
+}
+
+.arrow {
+	margin-left: 5px;
+}
+
+.car {
+	margin-right: 5px;
+	color: #d94f4f;
+}
+
+.count {
+	position: absolute;
+	top: -5px;
+	/* 左侧对齐，才能往右走 */
+	left: 100px;
+	background-color: #e60012;
+	color: white;
+	height: 14px;
+	line-height: 14px;
+	padding: 0 3px;
+	border-radius: 50% 50% 50% 0;
+}
+/* nav 制作开始 */
+.nav {
+	height: 45px;
+	border-bottom: 2px solid #b1191a;
+}
+
+.dropdown {
+	width: 210px;
+	height: 45px;
+	background-color: #b1191a;
+}
+
+.dropdown .dt {
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	line-height: 45px;
+	text-align: center;
+	color: white;
+}
+
+.dropdown .dd {
+	width: 209px;
+	height: 465px;
+	background-color: #c81623;
+	margin-top: 2px;
+	border-left: 1px solid #c81623;
+	display: none;
+}
+
+.dropdown .dd a {
+	font-size: 14px;
+	line-height: 31px;
+	color: white;
+}
+
+.dropdown .dd i {
+	font-family: 'icomoon';
+	float: right;				/* 浮动元素会顶到父元素的内边距，定位则在边框 */
+	font-size: 17px;
+	color: white;
+	line-height: 31px;
+}
+
+.dropdown .dd li {
+	height: 31px;
+	padding: 0 10px;		/* 如果没有指定宽度，那么给padding值的时候盒子大小不会变 */
+	color: white;
+}
+
+.dropdown .dd li:hover,
+.dropdown .dd li:hover a {
+	background-color: white;
+	color: #c81623;
+}
+
+.dropdown .dd li i {
+	
+}
+
+.dropdown:hover .dd {
+	display: block;
+}
+
+.navitems {
+	width: 740px;
+	height: 45px;
+}
+
+.navitems ul {
+	/* display: flex;
+	justify-content: space-around; */
+}
+
+.navitems ul a {
+	display: block;
+	float: left;
+	height: 45px;
+	font-size: 16px;
+	line-height: 45px;
+	padding: 0 25px;
+	font-weight: bold;
+}
+
+/* 头部样式编写完毕 */
+
+/* footer样式开始编写 */
+
+.footer {
+	height: 386px;
+	padding-top: 30px;
+	background-color: #f5f5f5;
+}
+
+.mode_service {
+	height: 79px;
+	border-bottom: 1px solid #ccc;
+}
+
+.mod_service_icon {
+	float: left;
+	width: 50px;
+	height: 50px;
+	background: url("../img/icons.png") no-repeat;
+	margin-left: 35px;
+	margin-right: 10px;
+}
+
+.mode_service ul li {
+	float: left;
+	width: 240px;
+	height: 79px;
+	
+}
+
+.mode_service_zheng {
+	background-position: -252px -2px;
+}
+.mode_service_che {
+	background-position: -253px -53px;
+}
+.mode_service_bao {
+	background-position: -256px -104px;
+}
+.mode_service_star {
+	background-position: -257px -155px;
+}
+.mode_service_question {
+	background-position: -256px -208px;
+}
+
+h3 {
+	margin-top: 8px;
+}
+
+.mod_help {
+	display: flex;
+	justify-content: space-around;
+	height: 187px;
+	border-bottom: 1px solid #ccc;
+}
+
+.mod_help_QR {
+	width: 90px;
+	height: 90px;
+	background: url(../img/wx_cz.jpg);
+}
+
+.mod_help > * {
+	margin-top: 15px;
+}
+
+.mod_copyright ul {
+	padding: 20px 160px 0;
+	display: flex;
+
+}
+
+.mod_copyright {
+	text-align: center;
+}
+
+.coline {
+	width: 1px;
+	height: 12px;
+	margin: 5px 10px;
+	background-color: #ccc;
+}
+
+/* footer样式编写完毕 */
